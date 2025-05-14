@@ -30,7 +30,7 @@ header .logo h1 {
 }
 
 .logo2{
-    width: 270px;
+    width: 100px;
     height: auto;
 }
 
@@ -68,16 +68,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-form label {
-    font-weight: bold;
-}
-
 form input, form select {
     padding: 10px;
     font-size: 16px;
@@ -101,4 +91,16 @@ form button {
     margin: 10px 0;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+     background-color: #0e2133;
+    color: #f9f9f9;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
 }
