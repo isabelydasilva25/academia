@@ -119,3 +119,12 @@ nav a {
     flex-wrap: wrap;
 }
 
+select {
+    width: 200px; /* Largura */
+    padding: 8px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    background-color: #eae6e6;
+}
+
