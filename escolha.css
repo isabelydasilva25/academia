@@ -44,6 +44,12 @@ header .logo h1 {
     right: 20px;
 }
 
+.logo4{
+    width: 250px;
+    height: auto;
+
+}
+
 nav {
     list-style: none;
     display: flex;
@@ -64,7 +70,7 @@ nav ul li a {
     font-size: 16px;
 }
 
-form button {
+form .botao {
     padding: 100px;
     background-color: #333;
     color: white;
@@ -78,20 +84,20 @@ footer {
     text-align: center;
      background-color: #0e2133;
     color: #f9f9f9;
-    padding: 10px;
-    margin-top: 40px;
+    margin-top: 120px;
 }
 
 footer p {
     font-size: 14px;
 }
 
-main button{
+.botao{
     display: inline-block;
     padding: 10px 20px;
     background-color: #0e2133;
     color: aliceblue;
     border-radius: 35px;
-    margin: 70px;
+    margin: 50px;
     border: none;
+    text-decoration: none;
   }

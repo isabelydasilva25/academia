@@ -44,6 +44,10 @@ header .logo h1 {
     right: 20px;
 }
 
+.logo4{
+    width: 250px;
+}
+
 nav {
     list-style: none;
     display: flex;
@@ -78,10 +82,10 @@ h2 {
     margin-bottom: 20px;
 }
 
-form input, form select {
+form input {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #0e2133;
     border-radius: 5px;
 }
 
