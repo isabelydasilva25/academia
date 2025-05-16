@@ -40,6 +40,10 @@ header .logo h1 {
     position: absolute;
     right: 20px;
 }
+.logo4{
+    width: 350px;
+    height: auto;
+}
 
 section {
     margin: 30px auto;
