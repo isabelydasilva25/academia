@@ -101,7 +101,7 @@ nav a {
 }
 
 
-.botao, .botao2, .botao3, .botao4, .botao5{
+.button{
     border-radius: 7px;
     margin-top: 10px;
     border: none;
@@ -109,6 +109,7 @@ nav a {
     height: 25px;
     color: #ffffff;
     background-color: #0e2133;
+    cursor: pointer;
     
 }
 
