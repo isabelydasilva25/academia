@@ -64,10 +64,6 @@ form {
     align-items: start;
 }
 
-form label {
-    /* font-weight: bold; */
-}
-
 form input{
     min-width: 100%;
     padding: 7px;
