@@ -41,7 +41,7 @@ header .logo h1 {
     right: 20px;
 }
 .logo4{
-    width: 350px;
+    width: 200px;
     height: auto;
 }
 
@@ -62,10 +62,6 @@ form {
     gap: 15px;
     justify-content: left;
     align-items: start;
-}
-
-form label {
-    /* font-weight: bold; */
 }
 
 form input{
