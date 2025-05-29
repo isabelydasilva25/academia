@@ -155,7 +155,7 @@ nav a {
 /* Telas grandes */
 @media (min-width: 1024px) {
     .logo {
-        width: 300px;
+        width: 250px;
     }
     
     .logo4 {

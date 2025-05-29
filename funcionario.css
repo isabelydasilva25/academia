@@ -30,31 +30,33 @@ header .logo h1 {
 
 .logo {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
 }
 
 .logo2, .logo3 {
     display: none; /* Oculta em mobile */
-    width: 80px;
     height: auto;
     position: absolute;
+    max-width: 80px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .logo2 {
     left: 15px;
+    width: 40px;
 }
 
 .logo3 {
     right: 15px;
+    width: 40px;
 }
 
 .logo4 {
     width: 100%;
-    max-width: 200px;
     height: auto;
+    width: 200px;
 }
 
 /* Seção Principal Responsiva */
@@ -173,7 +175,7 @@ footer p {
     
     select {
         width: 100%;
-        max-width: 300px;
+        max-width: 250px;
     }
 }
 

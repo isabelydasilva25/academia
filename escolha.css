@@ -146,16 +146,16 @@ form .botao {
 /* Botão Responsivo */
 .botao {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 10px;
     background-color: var(--primary-color);
     color: aliceblue;
-    border-radius: 35px;
-    margin: 15px;
+    border-radius: 10px;
+    margin: 20px;
     border: none;
     text-decoration: none;
     text-align: center;
     width: calc(100% - 30px);
-    max-width: 250px;
+    max-width: 200px;
 }
 
 /* Footer Responsivo */
@@ -164,7 +164,7 @@ footer {
     background-color: var(--primary-color);
     color: #f9f9f9;
     padding: 20px 10px;
-    margin-top: 30px;
+    margin-top: 200px;
 }
 
 footer p {
