@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,123 +8,186 @@ body {
     font-family: Arial, sans-serif;
     background-color: #acccdc;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header Responsivo */
 header {
     background-color: #f9f9f9;
     color: #333;
-    padding: 0px;
-    align-items: center;
+    padding: 15px 0;
     text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header .logo h1 {
     margin: 0;
-    padding: 10px;
+    padding: 10px 0;
 }
 
-.logo{
-    width: 300px;
+.logo {
+    width: 100%;
+    max-width: 300px;
     height: auto;
 }
 
-.logo2{
-    width: 100px;
+.logo2, .logo3 {
+    display: none; /* Oculta em mobile */
+    width: 80px;
     height: auto;
     position: absolute;
-    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.logo3{
-    width: 100px;
-    height: auto;
-    position: absolute;
-    right: 20px;
+
+.logo2 {
+    left: 15px;
 }
-.logo4{
-    width: 200px;
+
+.logo3 {
+    right: 15px;
+}
+
+.logo4 {
+    width: 100%;
+    max-width: 200px;
     height: auto;
 }
 
+/* Seção Principal Responsiva */
 section {
-    margin: 30px auto;
+    margin: 20px auto;
     align-items: center;
     text-align: center;
     max-width: 800px;
+    width: 95%;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Formulário Responsivo */
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
     justify-content: left;
-    align-items: start;
+    align-items: flex-start;
+    width: 100%;
 }
 
 form label {
-    /* font-weight: bold; */
+    display: block;
+    width: 100%;
+    text-align: left;
 }
 
-form input{
-    min-width: 100%;
-    padding: 7px;
+form input, form select {
+    width: 100%;
+    padding: 10px;
     font-size: 16px;
     border: 1px solid #0e2133;
     border-radius: 5px;
+    background-color: #eae6e6;
 }
 
+/* Navegação Responsiva */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #0e2133;
+    gap: 10px;
+}
+
+nav a {
+    color: #f9f9f9;
+    text-decoration: none;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+/* Botões Responsivos */
+.botao, .botao1, .botao2, .botao3, .botao4, .botao5 {
+    border-radius: 7px;
+    margin-top: 10px;
+    border: none;
+    min-width: 87px;
+    height: 35px;
+    color: #ffffff;
+    background-color: #0e2133;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.container_botoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Footer Responsivo */
 footer {
     text-align: center;
     background-color: #0e2133;
     color: #f9f9f9;
-    padding: 10px;
+    padding: 20px 10px;
     margin-top: 40px;
 }
 
 footer p {
     font-size: 14px;
 }
-nav {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: #0e2133;
-}
 
-nav a {
-    margin: 0 15px;
-    color: #f9f9f9;
-    text-decoration: none;
-}
+/* Media Queries para Responsividade */
 
-
-.botao, .botao1, .botao2, .botao3, .botao4, .botao5{
-    border-radius: 7px;
-    margin-top: 10px;
-    border: none;
-    width: 87px;
-    height: 25px;
-    color: #ffff;
-    background-color: #0e2133;
+/* Tablets (768px+) */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px 30px;
+    }
     
+    .logo2, .logo3 {
+        display: block;
+        width: 100px;
+    }
+    
+    nav {
+        gap: 20px;
+    }
+    
+    .botao, .botao1, .botao2, .botao3, .botao4, .botao5 {
+        height: 30px;
+        font-size: 16px;
+    }
+    
+    select {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
-.container_botoes{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+/* Desktops (992px+) */
+@media (min-width: 992px) {
+    header {
+        padding: 15px 50px;
+    }
+    
+    section {
+        padding: 30px;
+    }
+    
+    form input, form select {
+        padding: 12px;
+    }
 }
-
-select {
-    width: 200px; /* Largura */
-    padding: 8px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    border: 1px solid #ccc; /* Borda */
-    border-radius: 4px; /* Bordas arredondadas */
-    background-color: #eae6e6;
-}
-

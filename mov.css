@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,47 +8,56 @@ body {
     font-family: Arial, sans-serif;
     background-color: #acccdc;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header - Mobile First */
 header {
     background-color: #f9f9f9;
     color: #333;
-    padding: 1px;
-    align-items: center;
+    padding: 15px 0;
     text-align: center;
+    position: relative;
 }
 
 header .logo h1 {
     margin: 0;
-    padding: 10px;
+    padding: 10px 0;
 }
 
-.logo{
-    width: 250px;
+.logo {
+    width: 100%;
+    max-width: 250px;
     height: auto;
 }
 
-.logo2{
+.logo2, .logo3 {
+    display: none; /* Hidden on mobile */
     width: 65px;
     height: auto;
     position: absolute;
-    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.logo3{
-    width: 65px;
-    height: auto;
-    position: absolute;
-    right: 20px;
+
+.logo2 {
+    left: 15px;
 }
-.logo4{
-    width: 200px;
+
+.logo3 {
+    right: 15px;
+}
+
+.logo4 {
+    width: 100%;
+    max-width: 200px;
     height: auto;
 }
 
+/* Main Content Section */
 section {
-    margin: 30px auto;
-    align-items: center;
-    text-align: center;
+    margin: 20px auto;
+    width: 95%;
     max-width: 800px;
     padding: 20px;
     background-color: white;
@@ -56,61 +65,113 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    justify-content: left;
-    align-items: start;
+    width: 100%;
 }
 
-form input{
-    min-width: 100%;
-    padding: 7px;
+form input {
+    width: 100%;
+    padding: 10px;
     font-size: 16px;
     border: 1px solid #0e2133;
     border-radius: 5px;
 }
 
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #0e2133;
+    gap: 10px;
+}
+
+nav a {
+    color: #f9f9f9;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* Buttons */
+.botao, .botao2, .botao3, .botao4, .botao5 {
+    border-radius: 7px;
+    margin-top: 10px;
+    border: none;
+    min-width: 87px;
+    height: 35px;
+    color: #ffffff;
+    background-color: #0e2133;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.container_botoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Footer */
 footer {
     text-align: center;
     background-color: #0e2133;
     color: #f9f9f9;
-    padding: 10px;
+    padding: 20px 10px;
     margin-top: 40px;
 }
 
 footer p {
     font-size: 14px;
 }
-nav {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: #0e2133;
-}
 
-nav a {
-    margin: 0 15px;
-    color: #f9f9f9;
-    text-decoration: none;
-}
+/* Media Queries for Responsiveness */
 
-
-.botao, .botao2, .botao3, .botao4, .botao5{
-    border-radius: 7px;
-    margin-top: 10px;
-    border: none;
-    width: 87px;
-    height: 25px;
-    color: #ffffff;
-    background-color: #0e2133;
+/* Tablets and larger (768px+) */
+@media (min-width: 768px) {
+    header {
+        padding: 15px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
+    .logo2, .logo3 {
+        display: block;
+    }
+    
+    nav {
+        gap: 20px;
+    }
+    
+    .botao, .botao2, .botao3, .botao4, .botao5 {
+        height: 30px;
+        font-size: 16px;
+    }
 }
 
-.container_botoes{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+    section {
+        padding: 30px;
+    }
+    
+    form input {
+        padding: 12px;
+    }
+    
+    .logo {
+        max-width: 300px;
+    }
+    
+    .logo4 {
+        max-width: 250px;
+    }
 }

@@ -1,5 +1,4 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,15 +8,20 @@ body {
     font-family: Arial, sans-serif;
     background-color: #acccdc;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     background-color: #f9f9f9;
     color: #333;
-    padding: 1px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
     position: relative;
+    flex-wrap: wrap;
 }
 
 header .logo h1 {
@@ -25,27 +29,24 @@ header .logo h1 {
     padding: 10px;
 }
 
-.logo{
-    width: 250px;
+.logo {
+    width: 100%;
+    max-width: 250px;
     height: auto;
 }
 
-.logo2{
-    width: 65px;
+.logo2, .logo3 {
+    width: 100%;
+    max-width: 65px;
     height: auto;
-    position: absolute;
-    left: 20px;
-}
- 
-.logo3{
-    width: 65px;
-    height: auto;
-    position: absolute;
-    right: 20px;
+    position: static;
+    margin: 10px;
 }
 
-.logo4{
-    width: 250px;
+.logo4 {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
 }
 
 nav {
@@ -54,12 +55,14 @@ nav {
     justify-content: center;
     padding: 10px;
     background-color: #0e2133;
+    flex-wrap: wrap;
 }
 
 nav a {
-    margin: 0 15px;
+    margin: 5px 15px;
     color: #f9f9f9;
     text-decoration: none;
+    font-size: 16px;
 }
 
 nav ul li a {
@@ -69,12 +72,14 @@ nav ul li a {
 }
 
 section {
-    margin: 30px auto;
+    margin: 20px auto;
     max-width: 800px;
+    width: 90%;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
 
 h2 {
@@ -83,10 +88,12 @@ h2 {
 }
 
 form input {
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #0e2133;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .login {
@@ -95,27 +102,95 @@ form input {
     margin: 10px 0;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 footer {
     text-align: center;
-     background-color: #0e2133;
+    background-color: #0e2133;
     color: #f9f9f9;
-    padding: 50px;
-    margin-top: 110px;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
 }
 
 footer p {
     font-size: 14px;
 }
 
-.botao{
+.botao {
     display: inline-block;
     padding: 10px 20px;
     background-color: #0e2133;
     color: aliceblue;
     border-radius: 7px;
-    margin: 20px;
+    margin: 10px;
     border: none;
     text-decoration: none;
-  }
+    cursor: pointer;
+    width: auto;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .logo2, .logo3 {
+        position: static;
+        margin: 10px 0;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        margin: 5px 0;
+        padding: 5px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+    
+    .login {
+        padding: 15px;
+    }
+    
+    .botao {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 200px;
+    }
+    
+    .logo2, .logo3 {
+        max-width: 50px;
+    }
+    
+    nav a, nav ul li a {
+        font-size: 14px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    form input {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    footer {
+        padding: 15px;
+    }
+}
