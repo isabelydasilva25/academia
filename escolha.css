@@ -15,7 +15,7 @@ body {
 header {
     background-color: #f9f9f9;
     color: #333;
-    padding: 10px;
+    padding: 1px;
     align-items: center;
     text-align: center;
     position: relative;
@@ -27,19 +27,19 @@ header .logo h1 {
 }
 
 .logo{
-    width: 300px;
+    width: 250px;
     height: auto;
 }
 
 .logo2{
-    width: 100px;
+    width: 65px;
     height: auto;
     position: absolute;
     left: 20px;
 }
  
 .logo3{
-    width: 100px;
+    width: 65px;
     height: auto;
     position: absolute;
     right: 20px;
@@ -99,10 +99,11 @@ footer p {
     background-color: #0e2133;
     color: aliceblue;
     border-radius: 35px;
-    margin: 30px;
+    margin: 35px;
     border: none;
     text-decoration: none;
     margin-top: 80px;
+
   }
 
   .dashboard {
@@ -147,24 +148,4 @@ footer p {
 .stat-card .stat-desc {
     color: #666;
     font-size: 12px;
-}
-
-.a (max-width: 768px) {
-    body {
-        font-size: 14px;
-    nav ul {
-        flex-direction: column;
-    }
-}
-
-}
-
-body {
-    font-size: 16px; /* Define a fonte base para o corpo da página */
-}
-h1 {
-    font-size: 2.5em; /* O tamanho da fonte do título será 2.5 vezes o tamanho da fonte do corpo */
-}
-.container {
-    width: 80%; /* A largura da caixa é 80% da largura do seu elemento pai */
 }
