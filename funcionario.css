@@ -30,33 +30,31 @@ header .logo h1 {
 
 .logo {
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     height: auto;
 }
 
 .logo2, .logo3 {
     display: none; /* Oculta em mobile */
+    width: 80px;
     height: auto;
     position: absolute;
-    max-width: 80px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .logo2 {
     left: 15px;
-    width: 40px;
 }
 
 .logo3 {
     right: 15px;
-    width: 40px;
 }
 
 .logo4 {
     width: 100%;
+    max-width: 200px;
     height: auto;
-    width: 200px;
 }
 
 /* Seção Principal Responsiva */
@@ -175,7 +173,7 @@ footer p {
     
     select {
         width: 100%;
-        max-width: 250px;
+        max-width: 300px;
     }
 }
 
@@ -191,5 +189,58 @@ footer p {
     
     form input, form select {
         padding: 12px;
+    }
+}
+/* Estilos para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    min-width: 600px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+table th {
+    background-color: #0e2133;
+    color: #ffffff;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #0e2133;
+    color: white;
+}
+
+table button:hover {
+    opacity: 0.8;
+}
+
+/* Responsividade da tabela */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.8em;
+    }
+    
+    table th, table td {
+        padding: 8px 10px;
     }
 }
