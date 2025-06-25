@@ -14,9 +14,12 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.logo, .logo2, .logo3 {
-    height: 80px;
+.logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
+
 
 main {
     padding: 20px;
